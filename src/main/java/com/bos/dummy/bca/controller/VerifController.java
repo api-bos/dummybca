@@ -1,6 +1,6 @@
 package com.bos.dummy.bca.controller;
 
-import com.bos.dummy.bca.dto.Verif;
+import com.bos.dummy.bca.dto.VerifikasiCust.Verif;
 import com.bos.dummy.bca.services.VerifikasiCustService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/bos")
-public class DummyController {
+@RequestMapping(path = "/bca")
+public class VerifController {
     @Autowired
     VerifikasiCustService verifikasiCustService;
 

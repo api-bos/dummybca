@@ -1,6 +1,6 @@
 package com.bos.dummy.bca.services;
 
-import com.bos.dummy.bca.dto.Verif;
+import com.bos.dummy.bca.dto.VerifikasiCust.Verif;
 import com.bos.dummy.bca.repository.CustomerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,18 +18,18 @@ public class VerifikasiCustService {
 
         String vMobileNum = repo.getMobileNumByAcctNo(acctNo);
         System.out.println("vMobileNum: "+vMobileNum);
-        if(vMobileNum.isEmpty()){
+        if(vMobileNum == null){
             System.out.println("vMobileNum null");
-            return "INVALID ACCOUNT NO";
+            return "2"; //"INVALID ACCOUNT NO";
         }
 
         if(vMobileNum.equals(mobileNum)){
             System.out.println("mobile_num sesuai");
-            return "OK";
+            return "0"; //"OK";
         }
         else {
             System.out.println("mobile_num tidak sesuai");
-            return "INVALID MOBILE NUMBER";
+            return "1"; //"INVALID MOBILE NUMBER";
         }
     }
 }

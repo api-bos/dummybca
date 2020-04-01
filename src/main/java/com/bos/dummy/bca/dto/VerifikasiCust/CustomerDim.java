@@ -1,4 +1,4 @@
-package com.bos.dummy.bca.dto;
+package com.bos.dummy.bca.dto.VerifikasiCust;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
@@ -29,7 +29,7 @@ public class CustomerDim {
     private String custName;
 
     @Column(name = "balance")
-    private Number balance;
+    private String balance;
 
     @Column(name = "mobile_num")
     private String mobileNum;
