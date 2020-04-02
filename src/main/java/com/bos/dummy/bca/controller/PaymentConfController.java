@@ -5,13 +5,11 @@ import com.bos.dummy.bca.dto.PaymentConf.PaymentConfRequest;
 import com.bos.dummy.bca.dto.VerifikasiCust.Verif;
 import com.bos.dummy.bca.services.PaymentConfService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/bca")
+@CrossOrigin(origins = {"*"})
 public class PaymentConfController {
     @Autowired
     PaymentConfService confService;
