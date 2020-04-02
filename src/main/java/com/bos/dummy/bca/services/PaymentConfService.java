@@ -33,7 +33,7 @@ public class PaymentConfService {
         System.out.println("nama: "+fName);
 
         if((saldo - tagihan) >= 0){
-            final String uri = "http://localhost:8080/bos/payment";
+            final String uri = "https://virtualaccount.apps.pcf.dti.co.id/bos/payment";
             RestTemplate restTemplate = new RestTemplate();
 
             //setting up the request headers

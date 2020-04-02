@@ -13,7 +13,7 @@ import java.util.Date;
 
 @Service
 public class InquiryBillService {
-    private WebClient g_webClient = WebClient.builder().baseUrl("https://dummybca.apps.pcf.dti.co.id/bos")
+    private WebClient g_webClient = WebClient.builder().baseUrl("https://virtualaccount.apps.pcf.dti.co.id/bos")
             .defaultHeader(HttpHeaders.CONTENT_TYPE, "application/json").build();
 
     public InquiryDataResponse getBill(@RequestBody InquiryDataRequest p_inquiryDataRequest){
