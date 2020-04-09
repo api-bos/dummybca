@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/bca", produces = "application/json")
-@CrossOrigin(origins = "*")
 public class InquiryBillController {
     @Autowired
     InquiryBillService g_inquiryBillService;

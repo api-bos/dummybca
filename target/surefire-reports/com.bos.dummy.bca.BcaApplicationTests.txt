@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.bos.dummy.bca.BcaApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.043 s - in com.bos.dummy.bca.BcaApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.873 s - in com.bos.dummy.bca.BcaApplicationTests

@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/bca")
-@CrossOrigin(origins = {"*"})
 public class VerifController {
     @Autowired
     VerifikasiCustService verifikasiCustService;
